@@ -12,8 +12,13 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function getLetterGrade(grades) {
-  // grades is an array of numbers
+function calculateAverage(grades) {
+  let average = grades.reduce((total, grade) => Math.round((total + grade) / 2), 0)
+  return average < 60 ? 'F'
+      : average < 70 ? 'D'
+      : average < 80 ? 'C'
+      : average < 90 ? 'B'
+      : 'A'
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

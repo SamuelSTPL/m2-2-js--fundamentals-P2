@@ -8,8 +8,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countChar(str, char) {
-  // str and char are both strings
-}
+  let splited =  str.split('')
+  return splited.filter(letters => letters === char).length
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

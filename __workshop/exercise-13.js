@@ -6,7 +6,8 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function countBs(str) {
-  // str is a string
+  let splited =  str.split('')
+  return splited.filter(letters => letters === 'B').length
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

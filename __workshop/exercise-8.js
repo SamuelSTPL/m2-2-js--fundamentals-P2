@@ -7,8 +7,8 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function greet(list) {
-  // list is an array of strings
+function greet(list){
+  return list.map(name => `Hello ${name}`);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
