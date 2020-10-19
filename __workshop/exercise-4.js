@@ -6,7 +6,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(num1, num2, num3, num4, num5) {
-  return (num1 + num2 + num3 + num4 + num5) / arguments.length;
+  return Math.floor((num1 + num2 + num3 + num4 + num5) / arguments.length);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

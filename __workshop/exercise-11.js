@@ -6,9 +6,9 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  return grades.reduce((total, grade) => Math.round((total + grade) / 2), 0)
+  let sum = grades.reduce((total, grade) => total + grade)
+  return Math.round(sum/ grades.length);
 }
-
 
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

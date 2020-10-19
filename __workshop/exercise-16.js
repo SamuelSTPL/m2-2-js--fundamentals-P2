@@ -1,8 +1,3 @@
-=======> TODO
-
-
-
-
 // Exercise 16
 //
 // Write a JavaScript program that returns an array of ALL the numbers
@@ -16,7 +11,20 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
-  // num1 and num2 are Numbers
+  let answer = [];
+
+  for (let i = num1; i <= num2; i++){
+    let nums = i.toString().split("");
+    let sum = 0;
+
+    nums.forEach(num => {
+      sum += Number(num) * Number(num) * Number(num);
+    });
+    if (sum === i){
+      answer.push(i)
+    }
+  }
+  return answer;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
